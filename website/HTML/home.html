@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/CSS/homs.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="nav">
+      <div>
+        <a href="/HTML/home.html">HOME</a>
+        <a href="/HTML/aboutus.html">ABOUT US</a>
+        <a href="/HTML/contactus.html">CONTACT US</a>
+       </div>
+
+      <div>
+          <a href="#" class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span id="cart-counter">0</span>
+          </a>
+      </div>
+    </div>
+    
+      <div id="slider">
+        <div>
+          <button type="button" onclick="backSlideImg()" class="sliderbutton" id="slierB1"><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+        <div id="sliderimg">
+          <img src="/images/slider/1.png" alt="" width="150px" height="auto"/>
+        </div>
+        <div>
+          <button type="button" onclick ="nextSlideimg()" class="sliderbutton" id="slierB2" ><i class="fa-solid fa-arrow-right"></i></button></button>
+        </div>
+      </div>
+      
+      <div id="info-section">
+        <h2>Welcome to Our Ecommerce Store</h2>
+        <p>Explore a wide range of products, from electronics to fashion and beauty. Find the perfect items for your needs and enjoy a seamless shopping experience.</p>
+      </div>
+    
+   
+    
+    <div class="categories">
+      <button onclick="elec()" class="category-button">Electronics</button>
+      <button onclick="clo()" class="category-button">Clothes</button>
+      <button onclick="mak()" class="category-button">Makeup</button>
+      <button onclick="ho()" class="category-button">Home</button>
+  </div>
+
+    <div id="card_container">
+        <div class="card">
+            <img src="/images/elctronics/1.png" style="width:50%">
+            <h2>Samsung Galaxy A24</h2>
+            <p>Dual Sim Silver 8GB RAM 128GB 4G</p>
+            <button  onclick="addToCart(this.id)" id="0">Add to Cart</button>
+        </div>
+    
+        <div class="card">
+          <img src="/images/elctronics/2.png" style="width:50%">
+            <h2>ASUS TUF Gaming F15</h2>
+            <p>Laptop With 15.6 inch LED Core i7-12700 H 8 Gb Ram 1 T SSD</p>
+            <button onclick="addToCart(this.id)" id="1">Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="/images/elctronics/3.png" style="width:50%">
+            <h2>Lenovo Ideapad Gaming 3</h2>
+            <p>15.6 Inch Full Hd Ryzen 7 5800H 16 GB Ram 512 GB SSD 6 GB Nvidia</p>
+            <button onclick="addToCart(this.id)" id="2">Add to Cart</button>
+        </div>
+       
+        <div class="card">
+          <img src="/images/elctronics/4.png" style="width:50%">
+            <h2>PlayStation 5</h2>
+            <p>Console (Disc Version) With Controller</p>
+            <button onclick="addToCart(this.id)" id="3">Add to Cart</button>
+        </div>
+
+        <div class="card">
+          <img src="/images/elctronics/5.png" style="width:50%">
+            <h2>PlayStation 4</h2>
+            <p>Slim 500GB Console with Controller</p>
+            <button onclick="addToCart(this.id)" id="4">Add to Cart</button>
+        </div>
+    
+        <div class="card">
+          <img src="/images/elctronics/6.png" style="width:50%">
+            <h2>iPhone 15 Pro</h2>
+            <p>256GB Blue Titanium 5G With FaceTime - Middle East Version</p>
+            <button onclick="addToCart(this.id)" id="5">Add to Cart</button>
+        </div>
+    </div>
+    
+    <footer>
+      <div class="footer-content">
+          <div class="contact-info">
+              <h3>Contact Us</h3>
+              <p>Email: Ecommerce-web@example.com</p>
+              <p>Phone: +20 123 207 2790</p>
+              <p>Address: 123 abc street, Cairo, Egypt</p>
+          </div>
+
+          <div class="social-icons">
+              <h3>Follow Us</h3>
+              <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+      </div>
+
+      <button class="footer-button" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i> </button>
+  </footer>
+
+    <script src="/JS/homs.js"></script>
+  </body>
+</html>

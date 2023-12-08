@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/CSS/contactus.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="nav">
+      <div>
+        <a href="home.html">HOME</a>
+        <a href="/HTML/aboutus.html">ABOUT US</a>
+        <a href="contactus.html">CONTACT US</a>
+       </div>
+
+      <div>
+          <a href="#" class="cart-icon">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-counter">0</span>
+          </a>
+      </div>
+    </div>
+    
+    <div class="container">
+        <div class="body">
+            <img src="/images/contact/474d98fe9fa7b7ab4e229a4b03906e18.jpg" alt="">
+        </div>
+        <div class="body form">
+            <form id="myForm" class="form" onsubmit="return validateForm()">
+                <div class="form-group">
+                    <h2>Enter your info</h2>
+                </div>
+                <div class="form-group">
+                  <label for="fullName">Full Name:</label>
+                  <input type="text" id="fullName" name="fullName" required>
+                </div>
+            
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+            
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" minlength="6" required>
+                </div>
+            
+                <button type="submit">Send</button>
+              </form>
+        </div>
+        
+    </div>
+
+    
+    <footer>
+      <div class="footer-content">
+          <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: Ecommerce-web@example.com</p>
+            <p>Phone: +20 123 207 2790</p>
+            <p>Address: 123 abc street, Cairo, Egypt</p>
+          </div>
+
+          <div class="social-icons">
+              <h3>Follow Us</h3>
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <button class="footer-button" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i> </button>
+      </div>
+
+     
+  </footer>
+
+    <script src="/JS/homs.js"></script>
+    <script>
+        function validateForm() {
+          alert("Send Successfully")
+        }
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      </script>
+  </body>
+</html>
